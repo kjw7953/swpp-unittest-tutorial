@@ -37,6 +37,7 @@ export const postTodo_ = (td) => {
 };
 
 export const postTodo = (td) => {
+  console.log('td', td)
   return (dispatch) => {
     return axios.post('/api/todo/', td)
       .then(res => {
